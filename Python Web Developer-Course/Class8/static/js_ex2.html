@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .backtop {
+            position: fixed;
+            bottom: 20px;
+            right: 60px;
+        }
+
+        .hiden {
+            display: none;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+
+<div class="t1" style="height: 1000px">
+    <div class="backtop hiden">
+        返回顶部
+    </div>
+</div>
+
+<script src="js/jquery-2.0.3.min.js"></script>
+<script>
+    $(function () {
+
+        $(window).scroll(function () {
+            var values = $('body').scrollTop();
+            if (values > 100) {
+                $('.backtop').removeClass('hiden')
+            } else {
+                $('.backtop').addClass('hiden')
+            }
+        });
+        $('.backtop').click(function () {
+            $('body').scrollTop(0)
+        })
+
+
+    })
+
+</script>
+
+
+</body>
+</html>

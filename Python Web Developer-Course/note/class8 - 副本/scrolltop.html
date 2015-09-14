@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .gototop{
+            position: fixed;
+            right: 20px;
+            bottom:20px;
+        }
+        .hide{
+            display: none;
+        }
+
+
+    </style>
+
+</head>
+<body>
+<div style="height: 1000px">
+    <div class="gototop hide">
+        返回顶部
+    </div>
+
+</div>
+
+
+
+<script type="text/javascript" src="jquery-2.0.3.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $('.gototop').click(function(){
+            $('body').scrollTop(0);
+        });
+      $(window).scroll( function() {
+         var top = $('body').scrollTop();
+          if(top > 10){
+              $('.gototop').removeClass('hide');
+          }else{
+              $('.gototop').addClass('hide');
+          }
+      } );
+
+    })
+
+</script>
+</body>
+</html>

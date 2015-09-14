@@ -1,0 +1,28 @@
+__author__ = 'gubaoer'
+
+import SocketServer
+
+
+class MyServer(SocketServer.BaseRequestHandler):
+    def handle(self):
+        # print self.request
+        # print self.client_address
+        while True:
+            # conn, addr = self.request.accept()
+            conn = self.request
+            conn.sendall('welcome')
+            flag = True
+            f = file('D:/2.jpg','wb')
+            while flag:
+                data = conn.recv(1024)
+                f.write(data)
+                if len(data) < 1024:
+                    print 'file recv succeed..'
+                    f.close()
+                    conn.sendall("success")
+            conn.close()
+
+
+ip_port = ('127.0.0.1', 9999)
+sock = SocketServer.ThreadingTCPServer(ip_port, MyServer)
+sock.serve_forever()

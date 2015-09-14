@@ -1,0 +1,10 @@
+/* 派生选择器 */
+
+li strong{
+
+    color: red;
+}
+
+strong{
+    color: blueviolet;
+}

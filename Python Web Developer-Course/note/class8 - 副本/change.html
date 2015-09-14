@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .gototop{
+            position: fixed;
+            right: 20px;
+            bottom:20px;
+        }
+        .hide{
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+
+<select id="city">
+    <option value="1">beijing</option>
+    <option value="2">shanghai</option>
+    <option value="3">guangzhou</option>
+
+</select>
+
+<script type="text/javascript" src="jquery-2.0.3.min.js"></script>
+<script type="text/javascript">
+$(function(){
+    $('#city').change(function () {
+        var values = $(this).val();
+        console.log(values);
+    })
+
+
+})
+</script>
+</body>
+</html>

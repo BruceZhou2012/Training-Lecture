@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<input type="text" id="keyword" value="请输入关键字">
+
+<input type="text" name="v1" value="1">
+<input type="text" name="v1" value="2">
+<input type="text" name="v1" value="3">
+
+
+<script type="text/javascript" src="jquery-2.0.3.min.js"></script>
+<script type="text/javascript">
+
+    $(function(){
+        $('#keyword').focus(function(){
+            $(this).val("");
+        });
+        $('#keyword').blur(function(){
+
+            var ddd = $(this).val();
+            if( ddd.length > 0 && ddd != '请输入关键字' ){
+
+            }else{
+                $(this).val("请输入关键字");
+            }
+        })
+
+    })
+
+    $(function(){
+
+        $('input[name]').each(function(){
+            alert($(this).val())
+        })
+
+    })
+
+    </script>
+</body>
+</html>

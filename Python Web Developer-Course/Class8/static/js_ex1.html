@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<p class="test_js"> hello js</p>
+
+<input type="text" name="text_1" id="haha1" value="ha1">
+<input type="text" name="text_1" id="haha2" value="ha2">
+<input type="text" name="text_1" id="haha3" value="qingwen">
+
+
+<input type="text" id="haha4" value="4">
+
+
+<div id="result"></div>
+
+<script src="js/jquery-2.0.3.min.js"></script>
+<script>
+
+$(function(){
+    $('.test_js').click(function(){
+
+        $(this).html('junjie');
+        $('#haha1').val('haha1');
+        $(this).css({'color':"red"});
+        //var text_value = $('input[name]').val();
+        $('input[name]').each(function(){
+            if( $(this).val() == 'qingwen'){
+                $('#result').append('qingwen 是逗比');
+            }else{
+                alert($(this).val())
+            }
+        });
+        //alert(text_value);
+
+    });
+
+})
+
+</script>
+
+</body>
+</html>

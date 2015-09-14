@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<input type="text" value="请输入搜索关键字">
+
+<script src="js/jquery-2.0.3.min.js"></script>
+
+<script>
+    $(function(){
+       $('input').focus(function(){
+           $(this).val('');
+       });
+      $('input').blur(function(){
+          values =$('input').val();
+
+          if (values.length > 0 && values !='请输入搜索关键字' ){
+
+          }else{
+              $('input').val('请输入搜索关键字');
+          }
+
+      })
+
+    })
+
+
+</script>
+
+</body>
+
+</html>

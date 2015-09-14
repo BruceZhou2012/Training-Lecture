@@ -1,0 +1,44 @@
+body {
+    font-family: Microsoft YaHei, '宋体', Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+    color: #878787;
+    padding-bottom: 70px;
+}
+
+.log-login-well {
+    height: 320px;
+}
+
+.log-login-form {
+    position: relative;
+    top: 20px;
+}
+
+.login-carousel-caption {
+    top: 200px;
+}
+
+.login-carousel-caption h3 {
+    color: transparent;
+    -webkit-text-stroke: 0px black;
+}
+
+.text-align-center {
+    position: relative;
+    right: -68px;
+    padding-top: 18px;
+}
+
+.login-brandtext1 {
+    text-align: center;
+}
+
+.login-hr-class {
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
+.login-thumbnail {
+    width: 215px;
+    height: 290px;
+    overflow: auto;
+}
