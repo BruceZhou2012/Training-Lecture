@@ -13,3 +13,6 @@ These are Document share in my training or lecture on 2014-2015
 If you want by traning or learn Python Language， welcome to exchange all kinds of ideas with me.
 
 > Contact to: gubaoer@hotmail.com
+
+> Organization: QQ Group 151944919 
+> (**The most learning and careers about python developer in ShangHai**)
