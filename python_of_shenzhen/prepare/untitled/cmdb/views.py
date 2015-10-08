@@ -96,6 +96,11 @@ class CMDBViews(viewsets.ViewSet):
 
 
 class SnippetList(generics.ListAPIView):
+
+    """
+
+    http  http://127.0.0.1:8000/api/client/username=177/
+    """
     serializer_class = CMDBSerializer
 
     def get_queryset(self):
