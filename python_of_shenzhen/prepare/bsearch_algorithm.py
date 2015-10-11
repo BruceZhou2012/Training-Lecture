@@ -24,4 +24,4 @@ def search(object, args):
 
         return bSearch(object, args, 0, len(object) - 1)
 
-print search([1], 3)
+print search([1,2,3,4,5], 5)

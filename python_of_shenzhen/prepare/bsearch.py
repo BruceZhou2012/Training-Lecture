@@ -20,4 +20,4 @@ def search(object, keyword):
     else:
         return bSearch(object, keyword, 0, len(object) - 1)
 
-print search([1,2,3,4,5], 4)
+print search([1,2,3,4,5], 5)
