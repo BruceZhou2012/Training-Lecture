@@ -13,4 +13,18 @@ for url in link_list:
 '''
 s= requests.session()
 d = s.post("http://wx.233.com/account/login/auditaccount/", data={'userName':'gubaoer', 'passwd':'123456'})
-ddd = s.get("http://wx.233.com/uc/account/user/info")
+html_obj = s.get("http://wx.233.com/account/")
+
+
+
+
+'''
+
+import bs4
+html = html_obj.text
+html = html.encode('utf-8')
+soup = bs4.BeautifulSoup(html)
+links = soup.select('dl.my-friend-dl a.greenTxt')
+for i in links:
+    print i.get_text()
+'''
